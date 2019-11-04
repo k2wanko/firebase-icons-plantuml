@@ -1,0 +1,10 @@
+sprite $RemoteConfig [64x64/16z] {
+lPV14eCW34JJDewjsEx__wrsc4uTJJ2oofuyy5P44bYHeW2f5HOYqECcyCNH4GFiYQFB1eY9epq37169WyIt1k0CmF40Pm3E0A0CS3q_9jyWygfHV8CORng4
+ltxcBOCI_nuMwiKqAF2TKQ8fpZ-j4k-i2TYyYjprhySNLsi1dEdFmB1QFmN5AoXUGV7grK2C_nojhHMFgtXs_etMp_j_QBP_lFsxCSW5awlrjLy_udNLs_pS
+LzJl3qzRFaNutB3oqB6-VuNx9zk_svmVXVEh-lp4IUUta3X_Vv7s_CdtHsdBanTmBW2G0OGBG6J-8WCWbp-P24n4yDAG2G00
+}
+
+
+FirebaseEntityColoring(RemoteConfig)
+!define RemoteConfig(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, RemoteConfig, RemoteConfig)
+!define RemoteConfigParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, RemoteConfig, RemoteConfig)

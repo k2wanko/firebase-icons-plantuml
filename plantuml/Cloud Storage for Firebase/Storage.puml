@@ -1,0 +1,10 @@
+sprite $Storage [64x64/16z] {
+tPVR3eCW44GHh3VG-V-_RQsnWQB2CbQJpekwuOn4S9TLwb20AXKy4QZS1FlYw1m3fCJHnmR84qVl6K0Y4WU9nmRW3C3n06S0pW2W370JZqtSzTsgF8Cmr7YV
+rUJmOSG6wsh4V1VkApFucj9yUvXVEf9NBZOGyV448EBRF-F1ylWzN_TbyzUVVw0juVNqlg_cJVyeu4UWNYul6J4_p4zQsIKyQU7wBmF7OOsFrGw__V_KqS8u
+2LzP5wcHl3z__rDyAdz6igBy7Qb9vt-_VdofTndrew00ugO2IjR_4yylwdh-vFEZkfOd3-1S0q0s85m3HFPVP0F8zPzC2qoqu4T3dW00
+}
+
+
+FirebaseEntityColoring(Storage)
+!define Storage(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_YELLOW, Storage, Storage)
+!define StorageParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_YELLOW, Storage, Storage)

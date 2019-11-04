@@ -1,0 +1,10 @@
+sprite $RealtimeDatabase [64x64/16z] {
+pPV13eCm34ERRWB6Ilt_VpkE4pXTYW7DnwZFGb5ewfIQ0j9HuKi2scy2NneTCS0lQNJR035fj6U07eauH7nl0Cq06Wze1j0C0Ca0v_AJyVcqYHjiSV__u0QR
+clcyCPxKIYKg_2ohLTQj-eSyE3yNefdpNHVaNNmsYIz03jwHb5_x_r3smzkRuWZVC__i-qUV7oCy1WyV4EBNKQNYtTfLveOkcBzq0M_FBF5BU7xT-oCslqxj
+LHSByzjYzjkN8xowFxhtr-7zYPFsTn9n_VsIxkTFVZ-cUtdn0Qu50360Q058p5zY0DJofnA1XGZUEl81
+}
+
+
+FirebaseEntityColoring(RealtimeDatabase)
+!define RealtimeDatabase(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_YELLOW, RealtimeDatabase, RealtimeDatabase)
+!define RealtimeDatabaseParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_YELLOW, RealtimeDatabase, RealtimeDatabase)

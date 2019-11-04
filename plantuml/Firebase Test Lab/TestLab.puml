@@ -1,0 +1,11 @@
+sprite $TestLab [64x64/16z] {
+lPVf4eCW38IZj5vLylvlMulQiHm9iDRzuqpmMpaoaX29OgPQyKa0Mcx2QM5qZW5hmcZPWFE4qIa3BX68CuY71emPCCQ7m_OirS0RMXxUwfvMDF06viZfBeA1
+7syZlCddvsXwfLVWHqUYTlXLG_HAxg4V7DRzyaA6Q4hnV0_lvc-h-Uxpw9kvadU1dgXP0eCSVjpn80rYgH_XKtW17yNp-JYkyBE6hmO2Fr2luJ4T_BH2cq5N
+WdzvQtO32PVclnk8NnVtpnaOSVBo-Ja3SUtA-LkZu5h-h0OE7wRKJrp9FzjjiLh-246y-HD_nV-JhkRH-wFq_gg-F_cY-pkOG6dz0DSl5VKJNrb_uVKZtSk3
+1JZM080D2DO0WVqNs01Y_IVI0WCjkFJA6m00
+}
+
+
+FirebaseEntityColoring(TestLab)
+!define TestLab(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_AMBER, TestLab, TestLab)
+!define TestLabParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_AMBER, TestLab, TestLab)

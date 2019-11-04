@@ -1,0 +1,11 @@
+sprite $MLKit [64x64/16z] {
+nTVjRi8m38LX5zQcq99p_tTButnq4ukfUoQMNv7OunTfA6r4p0N8sOLlYw3-8UWlJXyPW7UBq_O075kSxWs0Pv4S97yT06u0E0zm0y0D0AW1-2SFap_kiMwN
+nHhGuI93sGQHkUyxeyVjerLtSTjTlNwLviCPFpQVycx_aEQ3uT7pO_EQDxoHLn_E-B7vd7Vwaay-dF4fVr5VybqFwUI7MNtAJuFXU_cRUir7fzSyr6iUW-_x
+QrxzedcdptdrNvft-fnNd_C-N_BLRtdBl_x_KtxUVNpdvVTyyIdlyZLVV7JwbizUynxVyjd7wlSrckTFowlFULn-F2jNw_mUsb6zj7mz3VOVHD-lKplfRrCj
+nJ3jQptu_70y05dFFh-5vFpxYtpU__7xetpMao_Wt0M0l81m5o3o_aLU0Bdx9tC59gxWrfyy0G00
+}
+
+
+FirebaseEntityColoring(MLKit)
+!define MLKit(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_YELLOW, MLKit, MLKit)
+!define MLKitParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_YELLOW, MLKit, MLKit)

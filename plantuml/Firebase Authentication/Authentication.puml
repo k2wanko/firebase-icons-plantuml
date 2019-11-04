@@ -1,0 +1,11 @@
+sprite $Authentication [64x64/16z] {
+pPVhai8W38KP2YnoE-__jhPCKNQ55lPqrFnAgjzfAE4I8GuD4FyrL4QWyoBe6qUF2E3CEFfO06F6qJq1p1Y9WyHV1S09WEC1JW2S0409u4CyI7mN8Fdc3q5B
+PKjWbTHXYhSvCHatFyeSs0a-x1zMRS6o1s6SrsLcrWHYyKqdWSPJMHW7t8g_jFdMKrKO3tXH3sQCjuL9G2g-7UVB06mb9Z71nwLwOnPOOgU2EfKLd4_5Jzv5
+VAcryq_1tTmpwJK8QPZtvb4_ocRCvGamVeHtylVEhBSizYAKxfJNhoUJgofQdyo_QPsCiQf8Sxn-cYVhJxKAn26Vchn-xWXvINmF_tT0IRPi_MRX4QIhz-yF
+yjUSV_JvBKYSlx-8z_CNtn_5Utdo0iur06G3mZL0PFz5De1S_ycqm4GBVlINEm00
+}
+
+
+FirebaseEntityColoring(Authentication)
+!define Authentication(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_YELLOW, Authentication, Authentication)
+!define AuthenticationParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_YELLOW, Authentication, Authentication)

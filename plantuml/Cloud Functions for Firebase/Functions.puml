@@ -1,0 +1,10 @@
+sprite $Functions [64x64/16z] {
+tPVR2iGW34H3KNmHv___Tc_iiZM9LSTsOVCII7C6gMqk8aq3PDRmPGGwBWBVEBf704V6qMq1z1b7Um8OCH87YMi1S0BWU80J02TGFIYnw6mZwE6RR2hN2jhy
+FLDKhXc4YukaVJGzWxQ0XSVw_D4KwCOT0SMx-4UWoHSVVmkKGpvu7qnGF2m-UNooUFmddpEKCtWuV7XTmzvPF4m-Ftokt2ayU_wJtb_l_U7dtuyivzd_Tw1-
+O77zcgcVRFrUspyc-jTq_yIY_ZqtFc3X_2BNyuldHxcM9mTmRW4W5n1k0IBtBt81vFPFPWKcLl1MoWq0
+}
+
+
+FirebaseEntityColoring(Functions)
+!define Functions(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_YELLOW, Functions, Functions)
+!define FunctionsParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_YELLOW, Functions, Functions)

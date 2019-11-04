@@ -1,0 +1,11 @@
+sprite $Invites [64x64/16z] {
+lPVR4eCW34HHB59Ai___jnrjwJZJXalMCGy-SHQ4JI3ELGDmri0X27HS17fmT8y0Mi7HTG7q1KTh0XW94WU9_mg04m370vm0E87Mo1nZhWWqQ5csGOjOUVyU
+vRK5DF1KfacAG8DV2x_-vrkR5meVJ7oU2tyty7Bx7lACSJxk9pTjtoah7ghi_BRq-G69oorg7bJfvswRsFBm7xE6A9zj3u9H_drSOVjddpjoI7EBcr9N4cf9
+kPfoEdzdnpKyk_wpzs_m_A3vHwp-6VLlH_uWXJKP-9A_Um7rOk2FzSDR-6FzUjZgPonyjDNlUwD-kjwKo3Q-N011lK2x18Bz0eQa9BK7WArMdFX-STVp9xyV
+tRKy-G3d6W2o0U4Q8BB_8Xj0hlzaMc2Y1QyDUG40
+}
+
+
+FirebaseEntityColoring(Invites)
+!define Invites(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, Invites, Invites)
+!define InvitesParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, Invites, Invites)

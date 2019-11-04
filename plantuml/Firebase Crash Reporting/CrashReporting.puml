@@ -1,0 +1,11 @@
+sprite $CrashReporting [64x64/16z] {
+pPVhheCW48INIpnUW7d_josAJUiHg3ZMTE8F1Rz9ThckI5M0d1NUHA3j9YYBeuyOu9Cukcw0O-BeaW5QHE8WyRq1E0DmFC0PW3C0A0DyW_SsF5-3zJM3FAv4
+hmP1YwePP7lws94C8YxIb_b2S8k1rV4fupKUtMjy_j3EE_NYbMlc_NP--xB1hYsuABtbzTmMSdm-Srdrz_23rclkzA8rXreFn_Wv-Gb97yciC0HvVjppOylA
+elYM_45-ZqS8Gue_B4hn3o5y8V-5yP_s_7Hu_OpMcXImNPJUZRNZCRvj_b_F-p7g__gVstp3_kEsl6lTlzSXM3MXcOStJzfudE1Z39rHodJkqm5uzlp4HUUt
+a3X_Vv7x-OllZt8lJrx0kGA0B42u0eYilyW2aAi_cHAOAC5hlpm0
+}
+
+
+FirebaseEntityColoring(CrashReporting)
+!define CrashReporting(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, CrashReporting, CrashReporting)
+!define CrashReportingParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, CrashReporting, CrashReporting)

@@ -1,0 +1,11 @@
+sprite $DynamicLinks [64x64/16z] {
+lPVHieCW34GPbHdj9RF__xU5blRQciJejiqJEfm5Gqn8Igu1wQnXPGHwN0IsSNH407l6qRu0OiRHbW2E68c3nBS2u0J0yG0d04u0e0JmPLwAU08xSBvDoc8A
+kFZoTD9Yy2u-jnd3D1W2Utp3nxPpcUf8Zl8Dptqy_W-Z_1g7g5CzNjBBaeF-0Sxs_-vukJzL3vG3l3p8d2udrfyxXHO-nVb-stNbWUU-_Qn5aE_vl1v8zCVI
+yIMABoe-wx-WS-u1NEFhxEa5BpOEFIQbKztZ5nDN-BhzeLFFy1CxXMrUbRxzj_0pCvYvFWBdhWNbcd0yR_AL6OEuohVpdsv9QmpWoSYvFMdE-nNaQD8Ev7-t
+QCJgXrcqjWNmRFt4X-ft8d7-_f9-pt_u_fX-ovCNSAu181iGhW4Y-o-o0UJwJwO59bfmRyeL
+}
+
+
+FirebaseEntityColoring(DynamicLinks)
+!define DynamicLinks(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, DynamicLinks, DynamicLinks)
+!define DynamicLinksParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, DynamicLinks, DynamicLinks)

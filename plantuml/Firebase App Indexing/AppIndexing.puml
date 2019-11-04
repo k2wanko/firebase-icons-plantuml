@@ -1,0 +1,11 @@
+sprite $AppIndexing [64x64/16z] {
+lPVRbeCW34K325fScF__su9EM-KccJFJF2cw3u5084HTOwRV6fyCGEKYt3QC7X7WEyFelW2F6KQt15XY8CuWNWem9i0Opum9C2R030dmF_2hqugqzGC2DLg_
+jDNZLg1iNivpQs_u1cvz2EkSdYOXlyP67OxdpSQNHSR7iUlFMnBO97pgFfpU5T7SSo1lSjcKFIxk57pD_KlKjzuAgtnIL_Tt7uE0BtvNCZxwl-Q2Mti0HOlD
+vjl7HIpPLJxhpn0vqRPKbm0klUch-Py2_X58UA_xMcZjlc_J6BoXcz5NbyRqi_TVEM0IykS4uD9y647yZqKxxnb8kN1uOyRtpzj2sDuHR0cCPT-sm63sRWgC
+Pl-6mFZfKHSWaO13U3QE8Rvz0A8yUduJYEFt5_e-_yVtH_ek3rx0iG80B42m0WYily024Ai_aH8OAC5xlpm1
+}
+
+
+FirebaseEntityColoring(AppIndexing)
+!define AppIndexing(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, AppIndexing, AppIndexing)
+!define AppIndexingParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, AppIndexing, AppIndexing)

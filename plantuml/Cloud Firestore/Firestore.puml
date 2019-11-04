@@ -1,0 +1,11 @@
+sprite $Firestore [64x64/16z] {
+lPVh3eCW38M9Xc2CiU__jilctAYqvU1Prh_mdT0Rq9H24qbtJIeZq74HyOsZ4G7f6KV70e8PHti2Cc8aBYJU2WWd81mlmWa89-3lMLT0mDsmJ2bDoqr-B-Tw
+sKC1SsdBTNpo5WXORi_N-fXNZxVTRiqAXCKN1IcfWl2NGojNXlWpQ5KeBGSSlaxQ9vK6RyQaZTKHKuolShKiAgS8_wsLuzXVHxQCy6q5UjNt4l0QR-vNduID
+rwy-wJMUDhCDZVYfWoitCi9VsbOryX1_dhVo1-TrlCvuelNRvkl89zO_Thqy0u7mJPgs_7PcBmXl5w9p1tVvARo3HpvStlsP8Dw_ln5-zFtGEphlLoWGDYxm
+_2FlzxtlW_pm_vB-p__u_vZ-ovCVS6u080SGRW0Yvozo0EJcJsO49aRmQCi3
+}
+
+
+FirebaseEntityColoring(Firestore)
+!define Firestore(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_YELLOW, Firestore, Firestore)
+!define FirestoreParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_YELLOW, Firestore, Firestore)

@@ -1,0 +1,12 @@
+sprite $Hosting [64x64/16z] {
+lPVhceGW28QDJhgPtF_TxkXCkuQG6Zt3hndj_I9G56Ck3T7SDSnCWVQBe6mwkaK0QwQZhmMmpNIq980zfiHHYPS2g1D07O-e4q2TWF10s9orRWir0HwsSCo3
+3RryMC_nNOCim4puWUPtyA90EUpEBAGlSG9VnSto7d6DlAU-RuXxTC4tyO5-kqsZBu4XjF1vv1VlZvVkCGkS0_JrnQkpg30Eq14hyGZaFyz3pZkI5gZo8Siw
+JCLKgF7RAynZnCSosv1IIGJAjJFXoFCplmXf-1QC0Wo_C07a-UH1iNKudlMV2CoVkOdndudVEqbZoRV4xpz98-K3km2P93coakQEzHC327_fEl7y-kK-m1tX
+_YHWcgouVzZzkySVF_bEc5ltRweV44uE92Uu-e5I_OBamJwV2f7lgP-MrYAfVae2yTHPht6id1y0zywFllFhzlc93vtVzwuF-E3znNoVV_Z-QBxBAo_WkWP0
+sO3e6Y1b_wLi07NzfwO5LhJWLu_y0W00
+}
+
+
+FirebaseEntityColoring(Hosting)
+!define Hosting(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_YELLOW, Hosting, Hosting)
+!define HostingParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_YELLOW, Hosting, Hosting)

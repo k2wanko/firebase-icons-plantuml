@@ -1,0 +1,11 @@
+sprite $InAppMessaging [64x64/16z] {
+lPVB5eCW34IZG4LvvF__jhgmLGmAZ3fBZtS4aaX2T2fcQXLl1A3r9fmNHfSOy9Km-jo0ouJHEGEk4OWpY1yD63DWZ1VVY5kT6mYmIJQeGzxWY0SXm3vd8AnT
+2NnVpaSnmp8B43xlY3gxLqyqocSey1EHIXxDvsb5dX_W7SXp67GB7uUOorUHvvGdCgwEFyQz7p5-rYTW_5mk3kEN18pNFAVX2yv-TBTkmr_o6Vd9cgK6rOJn
+tIyXAjQlrlN_lrx8x-f-7yHANer5ySlmnYFvQoDGFzeXzGVMxyR88BnxyVz93_3e_L5rVpNVdtpJ_ItkeAP_WFkNXlw9x-o_yFwHtkN11XmR0C0111k0mFaB
+702n-HCPWO4H_EoLBm00
+}
+
+
+FirebaseEntityColoring(InAppMessaging)
+!define InAppMessaging(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, InAppMessaging, InAppMessaging)
+!define InAppMessagingParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, InAppMessaging, InAppMessaging)

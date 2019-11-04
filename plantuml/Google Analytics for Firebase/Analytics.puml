@@ -1,0 +1,10 @@
+sprite $Analytics [64x64/16z] {
+tPVR3eCW44HNlE45v___jZOeQLh0bR4-k4_4p1cHgBiZaYr0IWiVHQ3dJP0kZjOOuAWuEcy0NN5qoW1dYiH1uhy6u0p0yG1d0Cv08NQ3dLC62jo-TMqnFtcX
+ZHeeRjzvfOa-WOAl4plLdlrJUV0y7ioxbQjTZaUENpoqv7Z5Mz-LyYPyDMNxhpnKFPWNcfS_y6vX-77bp5pC-tzrjMZusBLDssjvYNULffGtuQjfWjEP_c6z
+TbeFqg_6W_xrRT06QRyTHA9_fXheR0Uth_QkdUlVPUC3BfnVv7x-ulbHxkN90PmB06G0uG8GcR_80CZbJoO24n4y9ta1
+}
+
+
+FirebaseEntityColoring(Analytics)
+!define Analytics(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, Analytics, Analytics)
+!define AnalyticsParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, Analytics, Analytics)

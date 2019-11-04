@@ -1,0 +1,32 @@
+' Colors
+' ##################################
+!define FIREBASE_YELLOW #FFCA28
+!define FIREBASE_AMBER #FFA000
+!define FIREBASE_ORANGE #F57C00
+!define FIREBASE_BLUE #039BE5
+!define FIREBASE_NAVY #2C384A
+!define FIREBASE_CORAL #FF8A65 
+!define FIREBASE_GREY #ECEFF1
+
+!define FIREBASE_FONT_SIZE 12
+
+skinparam defaultTextAlignment center
+
+!definelong FirebaseEntityColoring(product)
+skinparam rectangle<<product>> {
+    BackgroundColor #FFFFFF
+    BorderColor FIREBASE_ORANGE
+}
+skinparam participant<<product>> {
+    BackgroundColor #FFFFFF
+    BorderColor FIREBASE_ORANGE
+}
+!enddefinelong
+
+!definelong FirebaseEntity(alias, label, part_desc, e_color, sprite, product)
+rectangle "==label\n<color:e_color><$sprite></color>\n//<size:FIREBASE_FONT_SIZE>[part_desc]</size>//" <<product>> as alias
+!enddefinelong
+
+!definelong FirebaseParticipant(alias, label, part_desc, p_color, sprite, product)
+participant "label\n<size:FIREBASE_FONT_SIZE>[part_desc]</size>" as alias << ($sprite, p_color) product>>
+!enddefinelong

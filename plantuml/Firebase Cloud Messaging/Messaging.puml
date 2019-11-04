@@ -1,0 +1,12 @@
+sprite $Messaging [64x64/16z] {
+lPVfjeGW283TpPNtVzkhDQV9ND9Xxl2dK_eXe90GCXG0ygd0HH3ekXBe2uwUKG1FWgF72c1ES7HF0Qm84WSaNYi0d0B0yG0u1O1J081I0F_3Mya8OMAB3mhQ
+OuQUxgauLD0SaNc42Sdpa_e1tnp8c0g76yaBujPuMQofqbjSuMq2mkKzAH3Jl5SvShRubbpmFGMtBsgFAQiCKXs-4JWgjQlcKHic-1muszaFmlqJxtgH5iT9
+CWyyx-sqtVIkehAju6EoiPyk8Uq27IQK9qGFXaFBWzisRVV0sN9lvSX-Lw-VJDPdH8Ee_BlxprePAi-W1ZlYypbrpHh3UdwNlBabphL8gfdpbxUeM8g_on0H
+zZ5_OfvEXThb5KjlzL66qiYz65Rv5_bxlUAmH6TKhaGoZFCN3Alv16l16Zuqwq_qzf2NyQmRmwKB5pSBzRlYfL-g_oNFjhZu_xZE46vit92_fCydFs0x4nlS
+x_iBznVoU_xBzqVoMnvv0SSr0CW61DS08VilP0E8wpynBJ2Y1HzD-GC0
+}
+
+
+FirebaseEntityColoring(Messaging)
+!define Messaging(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, Messaging, Messaging)
+!define MessagingParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, Messaging, Messaging)

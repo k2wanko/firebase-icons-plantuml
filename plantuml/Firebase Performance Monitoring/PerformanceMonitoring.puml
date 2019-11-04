@@ -1,0 +1,12 @@
+sprite $PerformanceMonitoring [64x64/16z] {
+lLVRjeGW2BLo32UL___RaxUEarWQiuQdDFSM4464k1H4yLIm40Pqd0JRmaFt4E2TyD3N1DWdF7IB04U42KScl2P07W7oy8Wy0kGHD1QuJGFepTqHq61Oyly5
+t31-_VJlUa50_31J-3DBfUGSFYVJ9AYdTG3hfBNJWK8ty0qub3FG823n9gjhh1zQamqoVVXzwUJYfZjYYnixFzk5N_DEAY1tsrNMQgK8pkT-s6wbYcnm-C3L
+-FFClcp-z4MsUpuvbSOlGMjGDe_y4giW7CjoYtT1otrRUPpRhexqIZZ2W0g_XVKsEis6-7e5LzfWm5OfKCUEtzcy_K2A74bl4uVwxb93EgxYVXnxAiA17NXt
+XM_e7-MLp4z2wK_xho3uXtVvpn-IfKspP00IyGDDrooZyLiA7R_j-uC6b9GA35xT7_B-UW_eAIVFIIVhU-vloXzcBjFlREZyWStyTQwl0_ahvizQz5Z-xe3Z
+JVqezH-f7sFrwt7zn2_LxsVF1_pY-qNy7l_bzwFuBPxv0ESr0Cm6XDS0CVilPWF8wpyvBJ2Z1RzQyWS0
+}
+
+
+FirebaseEntityColoring(PerformanceMonitoring)
+!define PerformanceMonitoring(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_AMBER, PerformanceMonitoring, PerformanceMonitoring)
+!define PerformanceMonitoringParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_AMBER, PerformanceMonitoring, PerformanceMonitoring)

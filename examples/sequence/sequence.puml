@@ -1,0 +1,13 @@
+@startuml
+!define FirebasePuml ../../plantuml
+!include FirebasePuml/FirebaseCommon.puml
+!include FirebasePuml/FirebaseAll.puml
+
+actor "Person" as personAlias
+FirestoreParticipant(db, "Database", "Document Database")
+FunctionsParticipant(func, "onCreate", "node8")
+
+personAlias --> db
+db --> func: firestore.create
+func --> personAlias: push notification
+@enduml

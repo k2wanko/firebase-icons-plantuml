@@ -1,0 +1,11 @@
+sprite $Crashlytics [64x64/16z] {
+lPVX5e8W38LHG37G-_vl6wMGfm37vcc_0lokX1lRb6eQeBY6amdGVX7KJKPJ171bChej09h9w9e0Uao8GuZ_2a0c01aFo0GW4wW-ihXeuKgWYjjzFN3vOtrg
+hvTMd770Tl2s_OB2l8dJXiXNy2YmCldfu3IJ__RjNduayoZo8O7Z4h1vs-HBitx77SM7KHMOmUAdCThhzD-ZhPUVqvz_nC6ghxRnm-jpL0ol7qjNL2T-oEUe
+MVn8uudx3sG-dvy_dvysL3v_FtFwVY4D2Npsdu_xROEg293yD-m1PHZniqQnT1sK14ZncssXyTNwmj7ux_ihxsTbtf_-un6y-zkNSP3pHx0sTEIFhlp5pf-u
+AN_poWVSMB-e__Ctru_glxom09Sr0C86HDO02VilOGCewpybBR2W1MyzyWG0
+}
+
+
+FirebaseEntityColoring(Crashlytics)
+!define Crashlytics(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_AMBER, Crashlytics, Crashlytics)
+!define CrashlyticsParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_AMBER, Crashlytics, Crashlytics)

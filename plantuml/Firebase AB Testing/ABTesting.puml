@@ -1,0 +1,10 @@
+sprite $ABTesting [64x64/16z] {
+pPVR4eCW34HHqNfb__zlwulr1Z5XhUs-ENfs70WawvmemEKA6n6etGHfSRJ605VYQDa0Ed5qoW0MaJX8_6m0pW0S3t06u0m0oW1VuAlz-bQ20R9vtC77tuGG
+_0Bx-S7ApweNlXPNy9SyU1v_otzAm6VntLezdM2GUZ5jos-o7wvIKRw2cdtzlup_tn_lry74X-B85y72L-V-uWry6-jlhNh_ntX_7RNdfuZpfPAlK-D1e-Ax
+z7pHA_WWp2UdJOpSFxqq7mtNz_T0ylk3Sx43CNwzzu-gGxm1vlPFtDI_7OdpyujxdhzvVdJFykG0pWK0Ce1m0OZCNsG0vF8d4u6922vzyWO0
+}
+
+
+FirebaseEntityColoring(ABTesting)
+!define ABTesting(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, ABTesting, ABTesting)
+!define ABTestingParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, ABTesting, ABTesting)

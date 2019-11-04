@@ -1,0 +1,11 @@
+sprite $Predictions [64x64/16z] {
+lPVHaeKW28RHpD8qtlzjLzkpCvfe63k7YveXlry5R0HWQ8Zmrh0m0JelWdsJqHm1V38PFHP0didedW3Ec1178TuAe4m0PJoYJ01b0lSleNfT5gjNBT0e7qj2
+mt8KBcjFHAUHnQE1TGLJUaw0JOEZTa1iBMP_jLRSaaUJ8Q1Yevl18OtSA9x2VVxWRrjATZ9vfRtNgWefcB21vV5kpy-zZ9RDoJXjvCrVJcpSk8R6kAV2LlAF
+k5Eml-KJ7Z0E1CRyXMCMS6_u3vxoKTTo9J0EdVkKtZ5_lAyQp0BXNeeJU18Ou_20jmU1nNFn3j_Ylmay0eidPj-LnsWMLlx9nMlGV-NmS7xelMVloZb_dT1n
+-LxacUlluNJyclzFD-zq_aONJKxDDxoQmbi-pEEa0E_0GazW3gzJ4DGiBh-_mFVvVxu_mdTvuGLSrW086n1P0oJiluGDeAp_bBJ0WXPyDEG7
+}
+
+
+FirebaseEntityColoring(Predictions)
+!define Predictions(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, Predictions, Predictions)
+!define PredictionsParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, Predictions, Predictions)
