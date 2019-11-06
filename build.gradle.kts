@@ -14,6 +14,9 @@ import java.io.InputStream
 import java.io.OutputStream
 import java.io.PrintWriter
 import javax.imageio.ImageIO
+import java.util.regex.*
+
+
 
 
 plugins {
@@ -149,6 +152,27 @@ task("buildAll") {
     output.flush()
     output.close()
 }
+task("setIconsToReadme") {
+    dependsOn("buildAll")
+    val pattern = Pattern.compile("^(<!-- icons-begin -->\\s(.*)<!-- icons-end -->)$", Pattern.MULTILINE or Pattern.DOTALL)
+    val table = StringBuilder().apply {
+        append("<!-- icons-begin -->\n")
+        append("|  Product  |  Icon  | Rectangle | Participant |\n")
+        append("| --------- | ------ | --------- | ----------- |\n")
+    }
+    fileTree("plantuml").matching {
+        include("**/*.png")
+    }.visit {
+        if (!file.isFile) {
+            return@visit
+        }
+        table.append("| ${relativePath.parent.pathString} | ![](./plantuml/${relativePath.pathString}) | ${file.nameWithoutExtension}(alias, \"\", \"\") | ${file.nameWithoutExtension}Participant(alias, \"\", \"\") |\n")
+    }
+    table.append("<!-- icons-end -->")
+    val readme = File("README.md")
+    readme.writeText(readme.readText().replace(pattern.toRegex(), table.toString()))
+}
+
 
 task("buildAssets") {
     dependsOn("buildAll")
@@ -169,7 +193,7 @@ task("buildAssets") {
     }
 }
 
-tasks["build"].dependsOn("buildAll", "buildAssets")
+tasks["build"].dependsOn("buildAll", "setIconsToReadme", "buildAssets")
 
 open class Svg2PngTask : DefaultTask() {
     @InputFiles
