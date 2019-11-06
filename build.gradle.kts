@@ -166,7 +166,7 @@ task("setIconsToReadme") {
         if (!file.isFile) {
             return@visit
         }
-        table.append("| ${relativePath.parent.pathString} | ![](./plantuml/${relativePath.pathString}) | ${file.nameWithoutExtension}(alias, \"\", \"\") | ${file.nameWithoutExtension}Participant(alias, \"\", \"\") |\n")
+        table.append("| ${relativePath.parent.pathString} | ![](./plantuml/${relativePath.pathString.replace(" ", "%20")}) | ${file.nameWithoutExtension}(alias, \"\", \"\") | ${file.nameWithoutExtension}Participant(alias, \"\", \"\") |\n")
     }
     table.append("<!-- icons-end -->")
     val readme = File("README.md")
