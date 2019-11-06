@@ -10,7 +10,6 @@ Functions(func, "onCreate", "node8")
 Analytics(ga, "Analytics", "")
 PerformanceMonitoring(monitor, "Performance Monitoring", "")
 
-
 personAlias --> db
 db --> func: firestore.create
 func --> personAlias: push notification

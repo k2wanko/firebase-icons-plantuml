@@ -1,14 +1,11 @@
 import de.undercouch.gradle.tasks.download.Download
-import net.sourceforge.plantuml.FileFormat
-import net.sourceforge.plantuml.FileFormatOption
-import net.sourceforge.plantuml.SourceStringReader
-import net.sourceforge.plantuml.ugraphic.sprite.SpriteGrayLevel
-import net.sourceforge.plantuml.ugraphic.sprite.SpriteUtils
+import net.sourceforge.plantuml.*
+import net.sourceforge.plantuml.sprite.SpriteGrayLevel
+import net.sourceforge.plantuml.sprite.SpriteUtils
 import org.apache.batik.transcoder.TranscoderInput
 import org.apache.batik.transcoder.TranscoderOutput
 import org.apache.batik.transcoder.image.PNGTranscoder
 import org.apache.tools.ant.filters.ReplaceTokens
-import org.gradle.internal.impldep.org.junit.platform.engine.support.descriptor.FileSource
 import java.io.InputStream
 import java.io.OutputStream
 import java.io.PrintWriter
@@ -29,7 +26,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("net.sourceforge.plantuml:plantuml:8059")
+        classpath("net.sourceforge.plantuml:plantuml:1.2019.9")
         classpath("org.apache.xmlgraphics:batik-all:1.10")
     }
 }
@@ -111,18 +108,20 @@ task("buildAllSprite") {
 
 task("buildAssets") {
     dependsOn("buildAllSprite")
-    val outDir = file("assets")
-    fileTree("examples").apply {
-        include("**/*.puml")
-    }.files.forEach {
-        val output = File(outDir, it.nameWithoutExtension + ".svg")
-        output.parentFile.mkdirs()
-        val os = output.outputStream()
-        output.createNewFile()
-        val render = SourceStringReader(it.readText(), it.parentFile)
-        render.generateImage(os, FileFormatOption(FileFormat.SVG))
-        os.flush()
-        os.close()
+    val outDir = File(rootDir,"assets")
+    doLast {
+        fileTree("examples").apply {
+            include("**/*.puml")
+        }.visit {
+            if (file.isDirectory) {
+                return@visit
+            }
+            SourceFileReader(
+                    file,
+                    File(outDir, relativePath.parent.pathString),
+                    FileFormatOption(FileFormat.SVG)
+            ).generatedImages
+        }
     }
 }
 
@@ -202,7 +201,7 @@ open class BuildSpriteTask : DefaultTask() {
         val input = ImageIO.read(`in`)
         val output = PrintWriter(out)
         val sprite = SpriteUtils.encodeCompressed(input, name, SpriteGrayLevel.GRAY_16)
-        output.println(sprite)
+        output.println(sprite.replace("\\r\\n|\\r", "\n"))
         output.println()
         output.println("FirebaseEntityColoring($name)")
         val color = colorPatterns[name]?: "FIREBASE_CORAL"

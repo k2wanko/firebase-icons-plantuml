@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="599px" preserveAspectRatio="none" style="width:603px;height:599px;" version="1.1" viewBox="0 0 603 599" width="603px" zoomAndPan="magnify"><defs><filter height="300%" id="f1jmifzelron7j" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--entity personAlias--><ellipse cx="29.5" cy="295" fill="#FEFECE" filter="url(#f1jmifzelron7j)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M29.5,303 L29.5,330 M16.5,311 L42.5,311 M29.5,330 L16.5,345 M29.5,330 L42.5,345 " fill="none" filter="url(#f1jmifzelron7j)" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="47" x="6" y="365.5352">Person</text><!--entity db--><rect fill="#FFFFFF" filter="url(#f1jmifzelron7j)" height="133.4648" style="stroke: #F57C00; stroke-width: 1.5;" width="145" x="151.5" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="75" x="186.5" y="31.5352">«Firestore»</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="75" x="186.5" y="49.957">Database</text><image height="64" width="64" x="192" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAACbUlEQVR4XtWWu3EbMRCGWY46cCFqRI24AjfiGhg4sjJlCpwp04yzFQjwKPB+7AO7wN3xmz8g7/D6ZnZBnmgq56dLZnJaPwhSTixnKGEBPF9vYgQE8CjBuHAJ4N6j0k+/AO46PD30COBO82LGLIB7bBADBgFcd8toaAK44i7hEQVwob3CwwvgKvuG4XEEzm0HRgAnHyEtWgI48zgBHk3gvHYAAZwQydvLJfg8mIp7ARzqzvtP+v9+XTZ9SF9xjDsVowX+/KB/v+7WrEmv0gCc5chCJYCDuvL6TB+/v1cTSMPSYFyhN5kRAqnKP/9+r2MkTQm2R2YRwNeW1IXuI9IeGa+AUOg16XxGw7Qg7iIn4xVQqSvEWGO4i5zMBAGuR9UuxylqBgtYbknhnsXBaq4C+EJNja8R8QLAMWqiAupVmE4pu9XtgW/V+AW4Qi/BOpGrq7QHPlfjF+Aid6qs7co4AeNdSYbC68kJH3UH29GCr/UhAQEsdB9ye2jxlpBQ6DWpWox15Wtiv4BK3a9yZ9/AXQyZIMCVhFpyOMWQcQL2puSaHkeq8f8O1PiuRbx2cYya6J+5+A9T3R74Vo1fgCt0IeWszUor7YFT1PgFuoLVQnyvd2ULgWa/3ogUYWa+gEyzoozJLAI0zYHDd3fVyewhECmbOpltBYY0bslCJUBzHChW6FwW7gVogkOw0JupmC8wPPeAAB3bAWgJ0IEdgIcSaMEI0PEcGHgBOpgDw4MI8IgCBVxu44gYBGg/BwM2gQJuMDU2egRoK4ceOgVovkMn/QIF3HhI+vEK0GgHLwGBFXgmNSMYJ7ACjzvoxCu+AHU4qXdkrGLzAAAAAElFTkSuQmCC" y="53.332"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="125" x="161.5" y="128.9336">[Document Database]</text><!--entity func--><rect fill="#FFFFFF" filter="url(#f1jmifzelron7j)" height="133.4648" style="stroke: #F57C00; stroke-width: 1.5;" width="101" x="491" y="434"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="81" x="501" y="457.5352">«Functions»</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="72" x="505.5" y="475.957">onCreate</text><image height="64" width="64" x="509.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAACG0lEQVR4Xu2Yu3XDMAxFPY43yCAZL4tkghQo0mWCFOl8Trp0CCXGjsRH0ABBfWj7nndcUASJK9v058CLQschS3JIB5zEjstpilsA+7PGh0MAW3GmiioB3LtV7NgFcNfmsWARwJ2Wixq1AO6xQhQoBHDdNXONawK44iaRKQrgQltFRhbAVbaNQD8ClHcQBLB4D8mRE8DK/QToTYBSBxDAgkLen/j0OjziJU2qyyfMBXBqIWHjn8+hKjxWNOEpn1ArcNk+Ym3CWU7/DhMBnCQl2T7y9ZJOKyRMTqh1sAtkuw8vZZxZTihJsDqMnAXwcjatuo9xOowYBRp2H5N1wGnZjFgEwr1JcHYfgw7KJ2HEIfD9lk6oTlhqilKABgeHgOnYKSc5lMwCeCGbh4CYhwBcyKYs8PE8JClRDlYL0LGRwOUYmR5N+kGXAAyJkQTC7ZwS765+kO5dgHt/CXELAcq9NfWDuxDw5H4FWn4OeOIVYJ3DrQl0/3Wat/5BQ1YB6v0nJY1PQkOHbPeW28839LcKqwVIcDAdSsmxw/buySNA4GDd3llOf93zTIBrHSq295efmQuw3eFU9f94THX5BJ/AJpkDArxvByAnwDt2ALoSyCEI8P4cBGQB3pmDQCcCMkWBCC63coooBHg7BwU6gQhusGh0WAR4LQcLRgFe3sGIXSCCGzeJnVoBbu1Qi0MgAXu6mha0E0jAdht1nPALxFN9YcAXleUAAAAASUVORK5CYII=" y="479.332"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="45" x="519" y="554.9336">[node8]</text><!--entity ga--><rect fill="#FFFFFF" filter="url(#f1jmifzelron7j)" height="133.4648" style="stroke: #F57C00; stroke-width: 1.5;" width="95" x="176.5" y="176"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="75" x="186.5" y="199.5352">«Analytics»</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="75" x="186.5" y="217.957">Analytics</text><image height="64" width="64" x="192" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAACMUlEQVR4Xu2YMU/DMBBG+2e7MzMzZUFig5FuSAxsdIQNqQsL6ggbEgsLEttxjVvH8Wc7tmM7McrTN4DPju8JpTVeUVaa9SE5WekDIxEdu5OU0QLYX2jGMUIAWxmZKKIEcO9UCSdcAHdNnhBCBHCnfPHGWwD3KBAPPATwuSUzxJAAPnGS2HEK4IOmih27AD5l2lioR6AxO1gEcPEcYsIkgCvnE6A2gUZ3AAFckCk357Td0NM93V7opcEo9AVwaqZw3yr7nT7BHYUpBO4ue5sKWAlnOnJCEcBJmfL63G0q+f7Spw2mZQqBz49uUxWc6U7LSQDL+bIIHNOyCEQklUBzcPgfAljImkWgyyJgD5/VZKP8A/8qSwkFmnUegaszvTmGB0U1sQAMJYjxtMODolqBAJ/MEHlcSywQu9KV3x+9OYYHRXURULMIGFNMINf3QGmBuMWO1CTAX7HyG0qmDoGH665R/oxXr3cqEMCrEe5P/inKCLTEChibeHk8VicQCF1v5P3tWK1AwHjakcc1NkGknvGoV/piS7vcFPCLIar8fiM8KKr4/lCSq0UKdNjvemu1Dvh9UJGvh8jIy93GJkCBDvzRya1sN71/uLSq7QI9y/U6BQpMkj4gQPN2AEwCNGMHoCoBExYBmp+DBbsAzczBQiUCdpwCAnxc4TjxEKDpHDzwExDgBlnjR4gAlXIIIVCA8jsEEi4gwI2TJJxYAUrtEMsIAQ3saTApSCegge0m6ljjD0QCjpO5QfjTAAAAAElFTkSuQmCC" y="221.332"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="8" x="220" y="296.9336">[]</text><!--entity monitor--><rect fill="#FFFFFF" filter="url(#f1jmifzelron7j)" height="133.4648" style="stroke: #F57C00; stroke-width: 1.5;" width="220" x="114" y="344"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="177" x="135.5" y="367.5352">«PerformanceMonitoring»</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="200" x="124" y="385.957">Performance Monitoring</text><image height="64" width="64" x="192" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAADUElEQVR4Xs2Yu7HWMBCFbwu0QAu0QAu0QAu0QAtkyv4ZZojIICEigoiIgBkiIoaEiEj32PK/rPdIsl5+fHMCW1qttPJKlv3gd8U9TNqT0d7DiPMaSrc7Hl+t+uhoz0PpVBNNzbjvUaqnvg33Olw11FhzT/upmGJT7uMAFVBgxH6P1BZbFuzxFKXJ1VkvJypNuo69nKsEyQrb/gqKES+1LS+iGLFSbnkdEZEi2+ZqWmPvrXWbbk/8h+f+80v/9dUkXOAWhWzZJsU6ADatEoaI4f7+svKpQRUM+iNRjAvg2+uVqzwwZg9VuqMCYKNCvX/m//357yfw94f/9dF/fzMJF7g1oAkasrdyzXQHgPzWYKAoiSYJClFlIkEJWxZq5h4AV5fIjB75zTYsmGmaY5jpCAAJIJh8wPW7pytj3BoDnXVtuTTTEYCMABc6Z2SCZVjYQwN6stFEe2D/m5ppDUDvOWb+sGoDMlzJe1RpS/0M2/alxgAweQLnPbIl7D/hVofKxno9RJd+XksAXJGX9Iqp5VotPceenlWQPB8Ob1ONAci7VpIEfWPKzcLVloFQCDMYy3BlK4Oxab6plgB0/oSHLtOMzNGWZruUxwWzQHgg7LBcLQHIliIDwowG9BqVQuHn26VKVrk8MckiOOces6oPQJ64nm/M5acXKzOZZkGnOIz1ehDj+peavd+WJIbZE42YzOzKM6lfx/Z+W80BZPK7KwA/IoVYyHiNLICoulLIVwbAizgliSE/enfwIta7Hm/8DdL7VSbNEqoPwKnXU33KRiSL6qAXmas5SpRowFGiNob8Yc7Nr4VwuMDqDAc73EYPQvptXZ8/vjEAtz5j6pWAbYS/jwVU6X1GZ/+hx+kg80GDCeYv9ygwg3H/B43rDEAflTOznuL8T0pHH/Vt1L+8Fs3cA/AnxdA8ejcqAEe/GAq5yo8t0fm/Fn13DLejfu66VAC+O4ag21m/1/2gAHbVGns/wW2uIyJSNMEtLyIiUjTBLa+gGPHSCW5/rhIkKybYy4lKkKyYYC9nKU2uboHdHawsG9UL7PQYFVBktMAd7KoySu0WuJs9VEOd9QT3N1aVVDdY4I6HqJ6WNgvcfY9aaW9p4TFtagRjvETg4Q4aseERHpBWVU2alvYAAAAASUVORK5CYII=" y="389.332"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="8" x="220" y="464.9336">[]</text><!--link personAlias to db--><path d="M45.09,284.79 C59.03,248.81 82.57,196.75 114,158.5 C123.67,146.72 135.29,135.6 147.29,125.54 " fill="none" id="personAlias-&gt;db" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="151.37,122.17,141.8836,124.8172,147.5149,125.354,146.978,130.9854,151.37,122.17" style="stroke: #A80036; stroke-width: 1.0;"/><!--link db to func--><path d="M296.66,123.57 C309.86,134.26 322.94,146.11 334,158.5 C408.57,242.04 471.22,356.24 507.32,429.2 " fill="none" id="db-&gt;func" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="509.66,433.94,509.2883,424.0982,507.4583,429.4508,502.1056,427.6209,509.66,433.94" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="95" x="365" y="197.0684">firestore.create</text><!--link func to personAlias--><path d="M490.97,518.41 C406.16,545.7 230.98,587.04 114,511.5 C66.97,481.13 46.15,417.2 37.13,373.06 " fill="none" id="func-&gt;personAlias" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="36.14,368.05,33.9666,377.656,37.1123,372.9545,41.8138,376.1003,36.14,368.05" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="108" x="170" y="508.0684">push notification</text><!--link personAlias to ga--><path d="M53.34,316.53 C82.34,303.88 133.22,281.68 171.72,264.88 " fill="none" id="personAlias-&gt;ga" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="176.35,262.85,166.5014,262.7815,171.7669,264.8488,169.6995,270.1144,176.35,262.85" style="stroke: #A80036; stroke-width: 1.0;"/><!--link personAlias to monitor--><path d="M53.34,336.47 C67.87,342.81 87.91,351.55 109.13,360.81 " fill="none" id="personAlias-&gt;monitor" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="113.96,362.92,107.3095,355.6556,109.3769,360.9212,104.1114,362.9885,113.96,362.92" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+left to right direction
+
+
+skinparam defaultTextAlignment center
+
+
+
+sprite $Analytics [64x64/16z] {
+vTK5TiD040JH5RFw_gSDrOj9jDeEfnwOvfkb2Vj98JNTPD1hbYP3ayF9qEHmCZGvd4mkWvFhPN8Pd5olKtpgsb4FdU1jUAbAzWE3hUwBvQgPpFLGh2y2hNdz
+Oo_Vwm_xwSKLqvxNdfz1yuwF-TVNgJu7vQdlFmDbVzW7suTFyDFi-Fx5vMEo7q1pZ5_UTvbjOdrOtofbgiylHqrvUQOp-wDbTf1whlKx-slj2QhBQCCNSTcV
+aGjuRBlf_LexxkzlV4fmCZYvtk1aS7AzmydWv6WoE1cQ74u69qTVSkob2FeC
+}
+
+
+skinparam rectangle<<Analytics>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<Analytics>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $DynamicLinks [64x64/16z] {
+fTK7RiGm44DHRcyQyFwtpI1XkaK8vaVP-jmbmKTYR_nHG3kLQ9NfBk0gqrt0LQQxWAkGC-DTwXboPhnBFJFUhV7SroXkjiBh0dINuaRofWUW7XDl-HtTyNn4
+zp3Uy5EHh3E0cdZBBtf_qblZ7MTj_jNv4bV7xHFWlDS77tpl30ok-wBa1SyT-xzBDGU6EVyPRqNnYmx_ml_1NdbnlIdIv_bZbJys-PrSE_wot7lz-_oB3_55
+hoirnBkd-98lu2ZrzVZLbF_tGuV_w_6RUqptJtFVZQS4pPMtlit9S-yBmBb8rcc1OpBdQj8KDnv-qbxrVj7mtYzQddVS6rJ8aV4kurtgCzvbl4jzm5N6kq2h
+Z7UPxWAkCjvbMXcxtW9z0m
+}
+
+
+skinparam rectangle<<DynamicLinks>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<DynamicLinks>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $Firestore [64x64/16z] {
+lTPNgiOW54NXWq4K4Pt_Q6zlctkoMVmbw_rBjOLlxxYr_QSRgNQJreYs4Uxp6kGuosYMuJ33KOQpZ6SPZZASPJoBy37y1Jpl9QBq6_rgyLLREy_mMUDFTUwq
+Cp-E2EqOPpvzxQJIcM-2v5ADU7reVHNezQFDAbuwzstfhynzVidaM_L2lVohtkMV4b_dxsFhYypglJQhViYyCpyEF_fylTZHvrijqjf2pr_bmUKrAl4wRNKY
+Gw_FkzeDldJzddpyvlzh77p-r9cF9-RR-WU_NcOrv_r0rAjoN-mQp0vSVlqCvFMFS4_s3nVOlyBwqk46d0VsR_My1vvVudeVsWrSkzP7qWrSkqLhZ9k0zX7k
+ynnaDCzO7g2l
+}
+
+
+skinparam rectangle<<Firestore>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<Firestore>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $Predictions [64x64/16z] {
+fTO5TeHG44JHmlb6xN-twIXsYlHClt6vkE4v4k_6Gm6wvzQwcBQ2t8ffAyYjcBQ2t0fo1ZaPzGno1ZaPzTIy_hxijR-NFSLPXcfwADoRvurCFLsU8wO98mzj
+mD8ZyPJYRB0QZoq0UbvIdltjpnN0SlE2PrYPnqPOczDtVSvznqC5Orqm-tnQQQs9UtCXkSrDU5qP4tN_-WnWeSp1KuVLuHMlRFi0jDUSDW0aXrUSJ1WfmYD7
+ebM1GftcLlhY-LqEf6SEoVSoTOXnmiaJQPLwypxEjSjiut3Zy76oHm_KkuUFCmEOABpcJg-vU_erryiFbeFBzOVh06vSf7mdkDVN5xaOW8yJOW1-VlUitQiy
+Vls2g0zo8CY1g0zoAyW1jvO5EH3JLf1RGGu4z5x0xZde1m
+}
+
+
+skinparam rectangle<<Predictions>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<Predictions>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $MLKit [64x64/16z] {
+fTG7ZiD034DHfan9R4ltF-qMOgFKqMBCZvBwJ5GXpnrxyuS4Ua_JJD5CuapHJE9CqKpYJEIkSAPw5xahdAdU5SuqhdjF-NOr_sjPiWSCE71mPmteO- -VAm1M
+lZC0frc_8dpRuqjummw_8NnBl8zy2M_8V3fFt_Ru4jumwpaVlatwc3_I6tBl6CmVEdq3K0-97yrVw3blavxpJizvppm6y_GBvsTypDEVEJ_fEK_FRCR7VFZg
+gGS-pVUxj_yyFis7hpxZOpwypVYO3rzzniTyUBlvUoMzFvmFNvqTyTYQtUz3dEebvhtWCSlyMkFIN-fjoLgzjthY9mEOwY5oA9mfdAbUuKpXJFKIPmfdacOA
+Pufc4cSAPugE51lbb7q3
+}
+
+
+skinparam rectangle<<MLKit>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<MLKit>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $AppIndexing [64x64/16z] {
+fT9NSiOW40JX1cMfqDp_jgvr-YCghwUV-SXS9_7VT9T1yvEedwKZZqUMZZmUMJhoU6HoMJnolKmkYqUkbyMZFlVzCTT2dNPTrUL7vRkowQAENxbhKhyBFksj
+7Gl0cFG7K9iKdHEmvdo5gjycuCpu0sYwLM1HhpT-Vhgo3QfwlT_-hhjE8ECBjESzjeH_6LvoliBnFE6fNgz-Uhhl7OeIxK_h3J0hKu7fyJCt9VQl3PZk-QoK
+rmIKxPIq3q1Hqck4g01H6PDUAx_DAZ1qENhRkLI0ChVOJNy2GBrQEtzVa27le_u4D-zC4DwOWF361AGcc1slOPRbrU7WUaoEoS7au7gJWyd1zHwFJ0wUZamE
+beuy7faS37tBiBV-G3y
+}
+
+
+skinparam rectangle<<AppIndexing>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<AppIndexing>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $RealtimeDatabase [64x64/16z] {
+pTK5RWGn44JHzZAwxd_Rg0J1yggL7zWl77Z3OzVZfFfkqbk0liMq7DAESOUqOzmXxHXta0jnHxqW5-AEUY7k8kV-D2esJlfKvhNiom6I7si_aW_hRZDqgwgc
+dmhD9_JA_d8BNR9NyBa_z9k1_4tQzBoYdzAMp0zNQVGz-FxJzH_N_jZnEgpuGGtlPang-Sk3Vk7xgr_mOxT1_YvjsfvylujrvtaVBPzMRchP9da-Vy3vgqGd
+KCWBSOUuenvnXxYZdd67k6FQ8UwGTemxn1tGRm7xLeE-
+}
+
+
+skinparam rectangle<<RealtimeDatabase>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<RealtimeDatabase>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $CrashReporting [64x64/16z] {
+pTLbcWCX48JXfeSOLlS_xGeL3vCdRArz_zyHr9u7s5V3LGAz96acQAPm9cYcS2Pefd0cSWYSgHuYXy2PwY5mzeJhliQ6OorM37l6WtaxShTGCMpTxytCsv6R
+xTSziFw0w1x9fpssTcw7UL_2nOSoxQlTL35kv5lvo6-zbu_Qo0z7Rjp-T_p1FH1upth1_V22PuK4FJwiODZOfqUVC4xrslZ1_fz7QmV-V-ln_m-j_S3uszZd
+HvzVtZyfniLwiMUz9SOqzCBu_OolwIE_fPu-gXFdJxdrPVRyHYPa6TCUTR5ZIyMaPsMxXB1i2rOvWtg1Yjm4pWJEL2zm9d2cUeKpWJD5Cu4pGJE5Cu4pJHyJ
+xAKNw3i
+}
+
+
+skinparam rectangle<<CrashReporting>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<CrashReporting>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $Storage [64x64/16z] {
+tTK5beDG50JH5znx_wiTwpXsFZLUyS359RQJucYw2z1RI3kW7U4EQ4Uu0zeHxY0Nu8vwGIx07VK2t37ElHRvq3QNjDVSgufRkNQQypxkovDz4m_btNtJlgzZ
+gmRw6FHOgczcNac-_cTUrElhVT4UM_xiUWxKHtmsVNm_JPBA0twK2dz8ofDz9qbPzFfeoXBtlqSSEycDfnKVYxxGSqEAF_N3h2h1hyLzqlLpNfzo_PvNwR6j
+-yUyTj2MJoySzG5v0Eu0TzG3xW1tr1Fk07T4Ey0Tq8vm1xW3-XQmjxHFNm4
+}
+
+
+skinparam rectangle<<Storage>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<Storage>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $RemoteConfig [64x64/16z] {
+fTLLSiH060DX9LaqwVwd3QbInadzw-vdVwOX_P-jitaHe7D89w0JuGdeH7W2EX6U83VWYNf3Ri0JzGOybJdtGz- -WIjUZHkKlVg6Tz6hVysFtQAxSeEwlsfV
+N_SF7NJrjgQ_IE-NkGzzT_6k5lStw3mtX1D_CV8N8n- -h-Wdrvjz8URv-zF_1yVFSFxm-IjlkloMrVfihf-sbzARxVk9zVl7-xtlAxxxBPSEXVsBxPzy_-Rd
+1po_P7g0GYx04-29Ui0Ju8bwmXFWYUW4U08w4Pu0Jq3F0JjNe5y
+}
+
+
+skinparam rectangle<<RemoteConfig>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<RemoteConfig>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $TestLab [64x64/16z] {
+lTO5TiD054DHcTb__wijg62QKHBhj2yCrqpGHU1kiSkWMvvcZcOMPuvc5cUEPXPd9W-7CzU7oGEQh_iYbV1BZMDDQX1PFkFQ8WOGfyg4hvxtCrBbvo1E3K3P
+7ok0AH8bVGyqSQm2nfoF__6S_lMsRpzVkcA-wHjoe5ZYq9D-84zi1XkNFiErrrnxnP_ti-HC-HwTv2plH-1x06s6QxzM783coFXj088BlmsWKbnx3a1oxJa0
+pRNd0CZxCUEXVQmjlyDTptfulleZ3_WUflVF7yRvopf_Xdl-thnr_U1Vlo1ahjUSEPovtkBCuSpIpE7CqSpYpE7Cq5k6tNg2lWC
+}
+
+
+skinparam rectangle<<TestLab>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<TestLab>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $Authentication [64x64/16z] {
+pTG7SeCm58JXDseqINl_soOxvasQR0ERzazJ-rm1UnnWLmFU4kXRWlOapJJE9CqqpYJDDCv43eaprKFaa3XJFIJEDAvxI9pfVinHSqWpzkOKSZtbPsEXSTo2
+iVc4htOhSHBjLZtki-qreFcuOD3O1pShiFWuZZq69JSRiFau7VUpcmvq7y_7FOAJjnSBEE5RTEul41k66SRLTUi-xjlQy4ypZEfrNTQt3_qwgVsmtqgmlJHt
+q7CSodR4hplsSWFy8WphKv_jIqJ1N-t9_rziK0Dc7vV7zu-Dce3Dl8U-3tq6gddzFtdxxCEe0jJWTVNv_O-ytLAzYTmapYJEL2zn9d6cUeqpYJDDCuapIJED
+CuapINk2VUi0VG4
+}
+
+
+skinparam rectangle<<Authentication>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<Authentication>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $PerformanceMonitoring [64x64/16z] {
+fPPNOiGW34JbBjQ0xd_Rn6FOAWUoyxws-9b1LFaRC_aMUu9G7t0sO6n0wO2n0QK3nWQK3aZT61smlf6wCJfWVMlgUG-gOS-j5_YoJbAODF_RtmHKDlEurEE0
+VyPvNUTH3ePe3XT-W1ooWHpmYk3vrxhQ4ueNTFgnnetf-9fYxL3iyuTV_OYkCFQpuNpyskLljQKLvYYo8fKx2fz-llSzpUlvDhtN87_uptfzR7okHKs39Dhs
+9wJMDPLlI9XMnR1CJJyZPHIPInZ4cOyG-AlbxtW-dKLBSh2Wb0aTs3y2VCmTj1nlPcYsbEyMpw_16YXQBa2lRIA5Vk5dns_aBoob-y3FxzUliZpfVVNBWb9x
+96y2UlD7BqipTSvV3ypVtlK3egxpl6gqw_NZhrzK80nI609wtxL-w_uHHtbYZFx-OPVxbxpHkN-182wXV__krArnVbGQvmTnVb7df_7dT_N92mYZ0zPdTC3e
+WFKf7J0we6p0w82n0QK3HWUKNI7S1ntg3m
+}
+
+
+skinparam rectangle<<PerformanceMonitoring>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<PerformanceMonitoring>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $ABTesting [64x64/16z] {
+pTL5WiCm0CLG1SlM_Myxgt8T-aFQlu2HwPIj-L10xmNwMgRLaAkPLaEkPbeDkHfoGwwfD-I6N5DloBNESz_nLEUdAdonD_LLRYcbl-A-bBBMgyFL3-h_zERU
+V-kxg-yt-GDSErYjwYyyT75rBGzrhctagTtAxp_oqccLBmqlDMMDxtYhN-7tV6Y_UFxFVEoyTFyqVAnTw0SgZOlyWMh71RvGhodpvyyHwftcp-zJw6sfrhh0
+bvvAG_d4mVG23JaXXv13waCE8OVKXnm8EMGQ8EIGQI3aGCWXqjS2Usy1_G8
+}
+
+
+skinparam rectangle<<ABTesting>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<ABTesting>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $Invites [64x64/16z] {
+fTLNOiCW40PXr6WcxFrFwpxf8UkVSNdxr5c5SMP1pJubKQ89JR8cdPEiIUSaQz8vgPnaJh8dbPFCIVRavotdPZzpyhw7QtjN_HRkRVOZ5w_XMRKVUNp2fz-z
+_LF4Hyct5Ly4tuz0gxtky_tEBRV_fTal3NrTRxizMS_xaUtN1lpj_jZWpErRZha_BtlizfhdTiNREM_DoErJeAMQ8pm5IgRKu8i92Nxs-6Uldth_wA_dfm-U
+7_7vbTUFrPYgu5c_s-r_wmFlcH_RmBlcrqcRdncVjVbTy4Np3TyqRt4m_lqRYFeBs7gjVS3n_k0aSvhrCYUPqwpNEScST4qo9rcJpadcDAL9iaGEUW4
+}
+
+
+skinparam rectangle<<Invites>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<Invites>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+
+sprite $Functions [64x64/16z] {
+tTQ5WSCm00J12tEs_sgVIHJQvml3s1OhfmEvDNo8eEzn6W2d0Sa1fm790QS1oG79aHoiHt8a1-iPykFY29p_SiIdcHuPVjdwvfzf_jlzaY5FLXHP9SC3zFW2
+oYow1pZ9nmSO-uOt1pZfZmrl3d0yw-SCCcyyFRyQ-LNFyp_zVa_pql4C_3oPDoyzJzVlasHVlbZ_DTV_DVNNvejyj8_oTlpA-GCvV_dvqy_VVlqGwvTQFx7h
+T-7D1aJon7h94ycJx_NfHF94w9T8dZYTHF8aaYT6Zm-I6y9vUWy
+}
+
+
+skinparam rectangle<<Functions>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<Functions>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $Crashlytics [64x64/16z] {
+fTPLWWCn38DX3tDq_zkkIYwwpLh_-pSOiky1bWqF2HHUNdkQPY9dccOYPvfc8cSYXyQPwY5oQ9of7XLycTcEe9zyi7Dxrjkb4K4nd_iPA5S_82holPdr5Jxc
+h3-IVhowBkdDo_csskEZts-mNNQKRVZgyQ7jmcV4nTulC27bnvQHTm0h__MJNLi17DslntZp59V06cCBQdlqZN_7BkNR1wy__rxj_VjjZz-lwskz_x-BABSH
+sLTuRtiUVgNnwsN6xtwPK7rY_Xp0DjgrljAt5hJKUOkQ8_zz_VBdEPBhv-OZ8hb-RvyvglUFVHXsH5xOlwJz4-h-xJwLUdvvJFKQPnfdgXSvqpXBQq_ZJDDC
+v4pZJD6UOhqA-WS
+}
+
+
+skinparam rectangle<<Crashlytics>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<Crashlytics>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $Hosting [64x64/16z] {
+lTPNakCm38JX5fH01VRzJxixUUGkg2YCm_zgVyeCa2GIVus7iZGifUFIMijpBQsrFDVIMijpxKxEDDVkzRoJKtY-UpsRlAx5lQorTO0Ok-4hyvhrTSPDSsNG
+ATywIDt6e1DVS9CP09JOjpacblW0iTyWhUHk0BPBldR2dIIh0LszukVZbM_Rnizs03CrzMJ58PUd4bm09J_pDC3Rtd2eo6knqCUNRsO3zQVQyYlGzG3Gave1
+AoNr1HZOntu42XivC95zw2V0htdsCdJ4DwvV3Z3oio6u_k3v6UK0O-FvnI-f5n- -FqRVJv4lQKnyF_IVVutY3V1huwTyFUwlkc7mi_4JZz-T91SS6kFnUp9_
+MFsyW4DTD7_mRFwodIJt4SUspFpfEXUXvEPlyyfPkDPOFymowqT-_Rfp_UIzwxVuP0_Sl-3r_jxze_PQZw0qr_9QItCjhRKyrz9SI-gumEQxGFy3
+}
+
+
+skinparam rectangle<<Hosting>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<Hosting>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $Messaging [64x64/16z] {
+fTPdaeOW48JX9d-IvlwttIcB3HQBgT-_-fW5S9u8tYP_8kXlZ1vnMYEvnccDv1gdDP9h91UEQwmNaWl7DTOBnxLJpliSB63zfykgCxuPO1IxB5hx0CtwuA2P
+kl1BhWonYMZP0YZFV3YSCmAcF_5PGPFV8k1l-neDW2n_iq2L_vfz13GxNL1S-Fd1mOHKflrCRgV-zy7bnVk0grU-h9wqnzvsuTtgJUTFyj2cQplu3ZXPrYnW
+vAmA95dNvZkONjD7ZhbyVBVXxFhBV7x0f2wZvk4kxjzENWj5HYsVUR50cRrcDvcR_GQODlkzUEVxiu0vdCeP_EJpvV_J3G3ZurwIlPfJSDWpdtxkfJlyP0uR
+oXOjWD3ElBRPsIjEtevxEFTQhrdJniNRvJDyjE1os_zRx_bGHLvxEvxxE-_B-SMTUfCwCm5dMKVE__YDunhhEQvnN6CzoJMEQuGUSLpZj4PoZUCQfqU4_Uq6
+_G8
+}
+
+
+skinparam rectangle<<Messaging>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<Messaging>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+sprite $InAppMessaging [64x64/16z] {
+lTP5beLG54FHu7up_zbMEhYJLV_qD_eCrv7u6XSPTCxGOvvM9bUULYPNdbOcLoQdnvNhQNBUyrZ6NTS-2gpB1swwuWFszTnqpfbXN_hS1_3y0RYl0v9wNGeq
+t7RcMo3ZkWAe3pt_mNUcvr3bNtnKmR4ddbiF5Dqxl__lQUDvLGwMLtbdUPNKSUy9hXkwkioJyJNwdNzOtzP51Y1hFPzKyVxvimHglFiR7nWRV-9NdpLKNttH
+E-Et3cF-v9qn_wpvkxvGuVZkX-idJE_l7yR-PUsVjFVlqNld1__y0hxCzrZdSULwaokFAqz3ULnvMfbSULnPUiomSm_e7m
+}
+
+
+skinparam rectangle<<InAppMessaging>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+skinparam participant<<InAppMessaging>> {
+    BackgroundColor #FFFFFF
+    BorderColor #F57C00
+}
+
+
+actor "Person" as personAlias
+rectangle "==Database\n<color:#FFCA28><$Firestore></color>\n//<size:12>[Document Database]</size>//" <<Firestore>> as db
+rectangle "==onCreate\n<color:#FFCA28><$Functions></color>\n//<size:12>[node8]</size>//" <<Functions>> as func
+rectangle "==Analytics\n<color:#FF8A65><$Analytics></color>\n//<size:12>[]</size>//" <<Analytics>> as ga
+rectangle "==Performance Monitoring\n<color:#FFA000><$PerformanceMonitoring></color>\n//<size:12>[]</size>//" <<PerformanceMonitoring>> as monitor
+
+personAlias - -> db
+db - -> func: firestore.create
+func - -> personAlias: push notification
+
+personAlias - -> ga
+personAlias - -> monitor
+@enduml
+
+PlantUML version 1.2019.09(Tue Aug 27 01:19:51 JST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 12.0.2+10
+Operating System: Mac OS X
+OS Version: 10.15
+Default Encoding: UTF-8
+Language: en
+Country: JP
+--></g></svg>
