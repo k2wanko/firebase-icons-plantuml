@@ -7,7 +7,7 @@
 ```puml
 @startuml
 left to right direction
-!define FirebasePuml ../../plantuml
+!define FirebasePuml https://raw.githubusercontent.com/k2wanko/firebase-icons-plantuml/master/plantuml
 !includeurl FirebasePuml/FirebaseCommon.puml
 !includeurl FirebasePuml/FirebaseAll.puml
 
@@ -33,9 +33,9 @@ personAlias --> monitor
 
 ```puml
 @startuml
-!define FirebasePuml ../../plantuml
-!include FirebasePuml/FirebaseCommon.puml
-!include FirebasePuml/FirebaseAll.puml
+!define FirebasePuml https://raw.githubusercontent.com/k2wanko/firebase-icons-plantuml/master/plantuml
+!includeurl FirebasePuml/FirebaseCommon.puml
+!includeurl FirebasePuml/FirebaseAll.puml
 
 actor "Person" as personAlias
 FirestoreParticipant(db, "Database", "Document Database")
