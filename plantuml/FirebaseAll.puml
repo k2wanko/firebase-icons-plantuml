@@ -187,8 +187,8 @@ CU_S__qL
 
 
 FirebaseEntityColoring(Extensions)
-!define Extensions(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, Extensions, Extensions)
-!define ExtensionsParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, Extensions, Extensions)
+!define Extensions(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_YELLOW, Extensions, Extensions)
+!define ExtensionsParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_YELLOW, Extensions, Extensions)
 
 sprite $Functions [64x64/16z] {
 tPS5ZiDG34GT9ajp_zCkyzggqrUUiAKt-GoMQjQNPajKOFTxz4hK0xgQ21qGe3y4yTnWLb4UugwwahG30nSocBLJdgI-B8XB49Sed-EXeMK6VH2N2i4v_ltE

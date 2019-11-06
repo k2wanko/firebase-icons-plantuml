@@ -279,6 +279,7 @@ open class BuildSpriteTask : DefaultTask() {
             "Hosting" to "FIREBASE_YELLOW",
             "Storage" to "FIREBASE_YELLOW",
             "RealtimeDatabase" to "FIREBASE_YELLOW",
+            "Extensions" to "FIREBASE_YELLOW",
 
             "Crashlytics" to "FIREBASE_AMBER",
             "AppDistribution" to "FIREBASE_AMBER",
