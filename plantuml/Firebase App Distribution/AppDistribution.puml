@@ -1,0 +1,11 @@
+sprite $AppDistribution [64x64/16z] {
+pTI5hkim08DXbxCK_FvlU-LHHW5T7_f5ew_WIKKv4lyRcJ9eojDKbbOULvPM7bUMLXvN9gV5bUjfSbfSkPuMLnxtFIskN9_deSyqx2r-HRQvnGTaMrhyXajn
+Uwu78fdAUSOHwiDWs_DxvZewe2TFuTx60m9jdYCmaKX5pThN_N4kGbiTIEsQTQpvhNi-OugSd-PNxxv_FUEjdXnqo4hTwnaltSROMMbvFUEjmFtz7mNVYY64
+kGSQvfVFD7wUVshrwuVv9s1fzH70LfqVENze078Dz-Ad-Ly6FOsBBdqS1-1jgpH_paTee1tNXksv0FH5FmFeU4A-gUWbH-x85yhFpwMV3Z8EVQRnS9_VVyhZ
+akjXSbXSMLovtkBAuihr7bSMLvvM5bUMLXvN5bU6JXasrK3_0G
+}
+
+
+FirebaseEntityColoring(AppDistribution)
+!define AppDistribution(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_AMBER, AppDistribution, AppDistribution)
+!define AppDistributionParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_AMBER, AppDistribution, AppDistribution)

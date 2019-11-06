@@ -1,14 +1,3 @@
-sprite $Analytics [64x64/16z] {
-vTK5TiD040JH5RFw_gSDrOj9jDeEfnwOvfkb2Vj98JNTPD1hbYP3ayF9qEHmCZGvd4mkWvFhPN8Pd5olKtpgsb4FdU1jUAbAzWE3hUwBvQgPpFLGh2y2hNdz
-Oo_Vwm_xwSKLqvxNdfz1yuwF-TVNgJu7vQdlFmDbVzW7suTFyDFi-Fx5vMEo7q1pZ5_UTvbjOdrOtofbgiylHqrvUQOp-wDbTf1whlKx-slj2QhBQCCNSTcV
-aGjuRBlf_LexxkzlV4fmCZYvtk1aS7AzmydWv6WoE1cQ74u69qTVSkob2FeC
-}
-
-
-FirebaseEntityColoring(Analytics)
-!define Analytics(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, Analytics, Analytics)
-!define AnalyticsParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, Analytics, Analytics)
-
 sprite $DynamicLinks [64x64/16z] {
 fTK7RiGm44DHRcyQyFwtpI1XkaK8vaVP-jmbmKTYR_nHG3kLQ9NfBk0gqrt0LQQxWAkGC-DTwXboPhnBFJFUhV7SroXkjiBh0dINuaRofWUW7XDl-HtTyNn4
 zp3Uy5EHh3E0cdZBBtf_qblZ7MTj_jNv4bV7xHFWlDS77tpl30ok-wBa1SyT-xzBDGU6EVyPRqNnYmx_ml_1NdbnlIdIv_bZbJys-PrSE_wot7lz-_oB3_55
@@ -103,6 +92,17 @@ FirebaseEntityColoring(Storage)
 !define Storage(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_YELLOW, Storage, Storage)
 !define StorageParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_YELLOW, Storage, Storage)
 
+sprite $Analytics [64x64/16z] {
+vTK5TiD040JH5RFw_gSDrOj9jDeEfnwOvfkb2Vj98JNTPD1hbYP3ayF9qEHmCZGvd4mkWvFhPN8Pd5olKtpgsb4FdU1jUAbAzWE3hUwBvQgPpFLGh2y2hNdz
+Oo_Vwm_xwSKLqvxNdfz1yuwF-TVNgJu7vQdlFmDbVzW7suTFyDFi-Fx5vMEo7q1pZ5_UTvbjOdrOtofbgiylHqrvUQOp-wDbTf1whlKx-slj2QhBQCCNSTcV
+aGjuRBlf_LexxkzlV4fmCZYvtk1aS7AzmydWv6WoE1cQ74u69qTVSkob2FeC
+}
+
+
+FirebaseEntityColoring(Analytics)
+!define Analytics(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, Analytics, Analytics)
+!define AnalyticsParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, Analytics, Analytics)
+
 sprite $RemoteConfig [64x64/16z] {
 fTLLSiH060DX9LaqwVwd3QbInadzw-vdVwOX_P-jitaHe7D89w0JuGdeH7W2EX6U83VWYNf3Ri0JzGOybJdtGz--WIjUZHkKlVg6Tz6hVysFtQAxSeEwlsfV
 N_SF7NJrjgQ_IE-NkGzzT_6k5lStw3mtX1D_CV8N8n--h-Wdrvjz8URv-zF_1yVFSFxm-IjlkloMrVfihf-sbzARxVk9zVl7-xtlAxxxBPSEXVsBxPzy_-Rd
@@ -113,6 +113,18 @@ N_SF7NJrjgQ_IE-NkGzzT_6k5lStw3mtX1D_CV8N8n--h-Wdrvjz8URv-zF_1yVFSFxm-IjlkloMrVfi
 FirebaseEntityColoring(RemoteConfig)
 !define RemoteConfig(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, RemoteConfig, RemoteConfig)
 !define RemoteConfigParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, RemoteConfig, RemoteConfig)
+
+sprite $AppDistribution [64x64/16z] {
+pTI5hkim08DXbxCK_FvlU-LHHW5T7_f5ew_WIKKv4lyRcJ9eojDKbbOULvPM7bUMLXvN9gV5bUjfSbfSkPuMLnxtFIskN9_deSyqx2r-HRQvnGTaMrhyXajn
+Uwu78fdAUSOHwiDWs_DxvZewe2TFuTx60m9jdYCmaKX5pThN_N4kGbiTIEsQTQpvhNi-OugSd-PNxxv_FUEjdXnqo4hTwnaltSROMMbvFUEjmFtz7mNVYY64
+kGSQvfVFD7wUVshrwuVv9s1fzH70LfqVENze078Dz-Ad-Ly6FOsBBdqS1-1jgpH_paTee1tNXksv0FH5FmFeU4A-gUWbH-x85yhFpwMV3Z8EVQRnS9_VVyhZ
+akjXSbXSMLovtkBAuihr7bSMLvvM5bUMLXvN5bU6JXasrK3_0G
+}
+
+
+FirebaseEntityColoring(AppDistribution)
+!define AppDistribution(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_AMBER, AppDistribution, AppDistribution)
+!define AppDistributionParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_AMBER, AppDistribution, AppDistribution)
 
 sprite $TestLab [64x64/16z] {
 lTO5TiD054DHcTb__wijg62QKHBhj2yCrqpGHU1kiSkWMvvcZcOMPuvc5cUEPXPd9W-7CzU7oGEQh_iYbV1BZMDDQX1PFkFQ8WOGfyg4hvxtCrBbvo1E3K3P
@@ -172,6 +184,17 @@ FirebaseEntityColoring(Invites)
 !define Invites(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, Invites, Invites)
 !define InvitesParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, Invites, Invites)
 
+
+sprite $Extensions [64x64/16z] {
+fTDLTiL030HHcTdQ_sf37OxEb5vK_xUDO-tSxR_vjnwbOIMj2benfq1pn3dG776ko1quL_LUv0wSgthFy6rOO23WzxAvMiriVjHVdTcYgvlHGCmr88u3Vxa6
+LbCQ2_lBxyw2xhHV8pvvsky17ptlVKvo9HyC85VYhO71mSFHsjtLEcmvlvbIYwl5pDQCF-ndsmUF1u1hG3mQ02vqYUjrD3iD6jltFv9Vstu6FdlR-m2Sl0-F
+SNaU40zyVc3odBy7uE3zxe63rq2Ao_F0wB67WOYprm1my1f0tXeOJIqEtZpkd8T-N2xavX1mim9NLL_Wgi1LrLUuAd1LqQh0LK4hv1Xm3dGkiBaIz1a
+}
+
+
+FirebaseEntityColoring(Extensions)
+!define Extensions(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, Extensions, Extensions)
+!define ExtensionsParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, Extensions, Extensions)
 
 sprite $Functions [64x64/16z] {
 tTQ5WSCm00J12tEs_sgVIHJQvml3s1OhfmEvDNo8eEzn6W2d0Sa1fm790QS1oG79aHoiHt8a1-iPykFY29p_SiIdcHuPVjdwvfzf_jlzaY5FLXHP9SC3zFW2

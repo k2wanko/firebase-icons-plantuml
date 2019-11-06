@@ -1,0 +1,10 @@
+sprite $Extensions [64x64/16z] {
+fTDLTiL030HHcTdQ_sf37OxEb5vK_xUDO-tSxR_vjnwbOIMj2benfq1pn3dG776ko1quL_LUv0wSgthFy6rOO23WzxAvMiriVjHVdTcYgvlHGCmr88u3Vxa6
+LbCQ2_lBxyw2xhHV8pvvsky17ptlVKvo9HyC85VYhO71mSFHsjtLEcmvlvbIYwl5pDQCF-ndsmUF1u1hG3mQ02vqYUjrD3iD6jltFv9Vstu6FdlR-m2Sl0-F
+SNaU40zyVc3odBy7uE3zxe63rq2Ao_F0wB67WOYprm1my1f0tXeOJIqEtZpkd8T-N2xavX1mim9NLL_Wgi1LrLUuAd1LqQh0LK4hv1Xm3dGkiBaIz1a
+}
+
+
+FirebaseEntityColoring(Extensions)
+!define Extensions(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, FIREBASE_CORAL, Extensions, Extensions)
+!define ExtensionsParticipant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, FIREBASE_CORAL, Extensions, Extensions)
