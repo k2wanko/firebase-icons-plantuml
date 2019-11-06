@@ -4,10 +4,10 @@
       <circle cx="96" cy="96" r="96" fill="none"/>
     </clipPath>
   </defs>
-  <g fill="#ffffff">
+  <g fill="none">
     <path d="M0 0h192v192H0z"/>
     <g clip-path="url(#a)">
-      <path fill="#000000" d="M0 0h192v192H0z"/>
+      <path fill="#ff8a65" d="M0 0h192v192H0z"/>
       <path d="M119.333 114.667v-14L138 119.333 119.333 138v-14h-28v-9.333zM114.667 68H82c-5.157.014-9.333 4.223-9.333 9.333v37.334c0-.014-18.658 0-18.667 0V124h18.667c5.156 0 9.333-4.21 9.333-9.333V77.333c0 .033 37.324.014 37.333 0v14L138 72.667 119.333 54v14z" fill="#fff" fill-rule="evenodd"/>
     </g>
   </g>

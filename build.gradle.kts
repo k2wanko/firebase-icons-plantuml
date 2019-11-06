@@ -1,15 +1,20 @@
 import de.undercouch.gradle.tasks.download.Download
-import net.sourceforge.plantuml.*
+import net.sourceforge.plantuml.FileFormat
+import net.sourceforge.plantuml.FileFormatOption
+import net.sourceforge.plantuml.SourceFileReader
 import net.sourceforge.plantuml.sprite.SpriteGrayLevel
 import net.sourceforge.plantuml.sprite.SpriteUtils
 import org.apache.batik.transcoder.TranscoderInput
 import org.apache.batik.transcoder.TranscoderOutput
 import org.apache.batik.transcoder.image.PNGTranscoder
 import org.apache.tools.ant.filters.ReplaceTokens
+import java.awt.*
+import java.awt.image.*
 import java.io.InputStream
 import java.io.OutputStream
 import java.io.PrintWriter
 import javax.imageio.ImageIO
+
 
 plugins {
     id("org.jetbrains.kotlin.jvm") version "1.3.41"
@@ -41,26 +46,41 @@ task("downloadFirebaseIcon", Download::class) {
 task("copyIcons") {
     dependsOn("downloadFirebaseIcon")
     doLast {
+        val transformer: (String) -> String = { filename ->
+            filename
+                    .replace("4- Icon, Use in Firebase Contexts Only", "")
+                    .replace("()", "")
+                    .replace(" for ", "")
+                    .replace("Cloud", "")
+                    .replace("Firebase", "")
+                    .replace("Google", "")
+                    .replace("-", "")
+                    .replace(" ", "")
+        }
         copy {
             from(zipTree(zipFile).matching {
                 include("**/*(4- Icon, Use in Firebase Contexts Only).svg")
             })
+            rename(transformer)
+            into(File("plantuml"))
+        }
+        copy {
+            from(zipTree(zipFile).matching {
+                include("**/*(4- Icon, Use in Firebase Contexts Only).png")
+            })
+            rename(transformer)
+            into(File(buildDir,"png"))
+        }
+        copy {
+            from(fileTree("plantuml").matching {
+                include("**/*.svg")
+            })
+            rename(transformer)
             filter(ReplaceTokens::class, "beginToken" to "<g fill=\"", "endToken" to "\">", "tokens" to mapOf("none" to "<g fill=\"#ffffff\">"))
             filter(ReplaceTokens::class, "beginToken" to "\"", "endToken" to "\"", "tokens" to mapOf("#ffca28" to "\"#000000\""))
             filter(ReplaceTokens::class, "beginToken" to "\"", "endToken" to "\"", "tokens" to mapOf("#ff8a65" to "\"#000000\""))
             filter(ReplaceTokens::class, "beginToken" to "\"", "endToken" to "\"", "tokens" to mapOf("#ffa000" to "\"#000000\""))
-            rename { filename ->
-                filename
-                        .replace("4- Icon, Use in Firebase Contexts Only", "")
-                        .replace("()", "")
-                        .replace(" for ", "")
-                        .replace("Cloud", "")
-                        .replace("Firebase", "")
-                        .replace("Google", "")
-                        .replace("-", "")
-                        .replace(" ", "")
-            }
-            into(File("plantuml"))
+            into(File(buildDir, "sprite"))
         }
     }
 }
@@ -74,28 +94,52 @@ task("cleanIcons", Delete::class) {
     delete(
             fileTree("plantuml").include("**/*.svg"),
             fileTree("plantuml").include("**/*.png"),
+            fileTree("assets"),
+            fileTree("build"),
             generatePuml)
 }
 tasks["clean"].dependsOn("cleanIcons")
 
 task("buildSvg2Png", Svg2PngTask::class) {
     dependsOn("copyIcons")
-    inputFiles = fileTree("plantuml").apply {
+    inputFiles = fileTree(File(buildDir, "sprite")).matching {
         include("**/*.svg")
     }
-    outputWidth = 64f
-    outputHeight = 64f
+    outputWidth = 512f
+    outputHeight = 512f
+}
+
+task("resizeSpritePng", ResizePngTask::class) {
+    dependsOn("buildSvg2Png")
+    inputFiles = fileTree(File(buildDir, "sprite")).matching {
+        include("**/*.png")
+    }
+    outputDirectory = File(buildDir, "sprite.2")
+    outputWidth = 64
+    outputHeight = 64
 }
 
 task("buildSprite", BuildSpriteTask::class) {
-    dependsOn("buildSvg2Png")
-    inputFiles = fileTree("plantuml").apply {
+    dependsOn("resizeSpritePng")
+    inputFiles = fileTree(File(buildDir, "sprite.2")).matching {
         include("**/*.png")
     }
+    outputDirectory = File(rootDir, "plantuml")
 }
 
-task("buildAllSprite") {
-    dependsOn("buildSprite")
+task("resizePng", ResizePngTask::class) {
+    dependsOn("copyIcons")
+    inputFiles = fileTree(File(buildDir, "png")).matching {
+        include("**/*.png")
+    }
+    outputDirectory = File(rootDir, "plantuml")
+
+    outputWidth = 64
+    outputHeight = 64
+}
+
+task("buildAll") {
+    dependsOn("buildSprite", "resizePng")
     val outputFile = File("plantuml/FirebaseAll.puml")
     outputFile.createNewFile()
     val output = PrintWriter(outputFile.outputStream())
@@ -107,7 +151,7 @@ task("buildAllSprite") {
 }
 
 task("buildAssets") {
-    dependsOn("buildAllSprite")
+    dependsOn("buildAll")
     val outDir = File(rootDir,"assets")
     doLast {
         fileTree("examples").apply {
@@ -125,7 +169,7 @@ task("buildAssets") {
     }
 }
 
-tasks["build"].dependsOn("buildAllSprite", "buildAssets")
+tasks["build"].dependsOn("buildAll", "buildAssets")
 
 open class Svg2PngTask : DefaultTask() {
     @InputFiles
@@ -162,9 +206,70 @@ open class Svg2PngTask : DefaultTask() {
     }
 }
 
+open class ResizePngTask : DefaultTask() {
+    @InputFiles
+    open lateinit var inputFiles: FileTree
+
+    open var outputWidth: Int = 128
+    open var outputHeight: Int = 128
+
+    open var outputDirectory: File? = null
+
+    @TaskAction
+    fun exec() {
+        inputFiles.visit {
+            if (!file.isFile) {
+                return@visit
+            }
+            val outputFile = File(
+                    relativePath.getFile(outputDirectory?.absoluteFile ?: file.parentFile).parent,
+                    "${file.nameWithoutExtension}.png")
+            outputFile.parentFile.mkdirs()
+            outputFile.createNewFile()
+            convert(file, outputFile)
+        }
+    }
+
+    private fun convert(`in`: File, out: File) {
+        val input = ImageIO.read(`in`)
+
+        var width = input.width
+        var height = input.height
+        var targetw = outputWidth
+        val targeth = outputHeight
+
+        do {
+            if (width > targetw) {
+                width /= 2
+                if (width < targetw) width = targetw
+            }
+
+            if (height > targeth) {
+                height /= 2
+                if (height < targeth) height = targeth
+            }
+        } while (width != targetw || height != targeth)
+
+        val bufferedImage = BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB)
+        val graphics2D = bufferedImage.createGraphics()
+        graphics2D.composite = AlphaComposite.Src
+        graphics2D.background = Color(0, 0, 0, 0)
+        graphics2D.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR)
+        graphics2D.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY)
+        graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON)
+        graphics2D.drawImage(input, 0, 0, width, height, null)
+        graphics2D.dispose()
+
+
+        ImageIO.write(bufferedImage, "png", out)
+    }
+}
+
 open class BuildSpriteTask : DefaultTask() {
     @InputFiles
     open lateinit var inputFiles: FileTree
+
+    open var outputDirectory: File? = null
 
     val colorPatterns = mapOf(
             "Firestore" to "FIREBASE_YELLOW",
@@ -183,13 +288,18 @@ open class BuildSpriteTask : DefaultTask() {
 
     @TaskAction
     fun exec() {
-        inputFiles.files.forEach { target ->
-            val outputFile = File(target.parentFile.absolutePath,"${target.absoluteFile.nameWithoutExtension}.puml")
+        inputFiles.visit {
+            if (!file.isFile) {
+                return@visit
+            }
+            val outputFile = File(
+                    relativePath.getFile(outputDirectory?.absoluteFile ?: file.parentFile).parent,
+                    "${file.nameWithoutExtension}.puml")
             outputFile.createNewFile()
-            val input = target.absoluteFile.inputStream()
+            val input = file.absoluteFile.inputStream()
             val output = outputFile.outputStream()
             try {
-                convert(target.absoluteFile.nameWithoutExtension, input, output)
+                convert(file.nameWithoutExtension, relativePath, input, output)
             } finally {
                 input.close()
                 output.close()
@@ -197,7 +307,7 @@ open class BuildSpriteTask : DefaultTask() {
         }
     }
 
-    private fun convert(name: String, `in`: InputStream, out: OutputStream) {
+    private fun convert(name: String, relativePath: RelativePath, `in`: InputStream, out: OutputStream) {
         val input = ImageIO.read(`in`)
         val output = PrintWriter(out)
         val sprite = SpriteUtils.encodeCompressed(input, name, SpriteGrayLevel.GRAY_16)
@@ -205,7 +315,7 @@ open class BuildSpriteTask : DefaultTask() {
         output.println()
         output.println("FirebaseEntityColoring($name)")
         val color = colorPatterns[name]?: "FIREBASE_CORAL"
-        output.println("!define $name(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, $color, $name, $name)")
+        output.println("!define ${name}(alias, label, part_desc) FirebaseEntity(alias, label, part_desc, $color, $name, $name)")
         output.println("!define ${name}Participant(alias, label, part_desc) FirebaseParticipant(alias, label, part_desc, $color, $name, $name)")
         output.flush()
     }
