@@ -27,7 +27,7 @@ personAlias --> monitor
 @enduml
 ```
 
-![activity.svg](./assets/activity.svg)
+![activity.svg](./assets/activity/activity.svg)
 
 ### sequence
 
@@ -47,4 +47,4 @@ func --> personAlias: push notification
 @enduml
 ```
 
-![sequence.svg](./assets/sequence.svg)
+![sequence.svg](./assets/sequence/sequence.svg)
